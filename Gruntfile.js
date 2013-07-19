@@ -114,9 +114,7 @@ module.exports = function(grunt) {
             files: [
               {expand: true, src: [ 'assets/fonts/*' ], dest: 'build/'}, // includes files in path
               {expand: true, src: [ 'assets/images/**/*' ], dest: 'build/'}, // includes files in path
-              {expand: true, src: [ 'includes/**/*' ], dest: 'build/'}, // includes files in path
-              {expand: true, src: [ 'templates/**/*' ], dest: 'build/'}, // includes files in path
-              {expand: true, src: [ '*.*', '!Gruntfile.js', '!package.json', '!source-map-main.js' ], dest: 'build/'}, // includes files in path
+              {expand: true, src: [ '*.*', '!Gruntfile.js', '!package.json' ], dest: 'build/'}, // includes files in path
             ]
           }
         }
