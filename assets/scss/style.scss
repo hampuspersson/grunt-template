@@ -10,21 +10,22 @@
 
 @import "../components/bourbon/bourbon";
 @import "../components/neat/neat";
-@import "../components/hampus-mixins/mixins";
+@import "../components/sassylicious/mixins";
 
 
 /*-------------------------------------------------------------------------
 | VARIABLES
 |------------------------------------------------------------------------*/
-$max-width: 71.25em;
+$base-font-size: 16px;
+$max-width: em(1200, $base-font-size);
 
 /* COLORS */
 
 
 /* BREAKPOINTS */
-$kiddo: new-breakpoint(min-width 30.0625em 4);
-$junior: new-breakpoint(min-width 48.0625em 12);
-$senior: new-breakpoint(min-width 73.25em 12);
+$kiddo: new-breakpoint(min-width em(480, $base-font-size) 4);
+$junior: new-breakpoint(min-width em(768, $base-font-size) 12);
+$senior: new-breakpoint(min-width em(1230, $base-font-size) 12);
 
 /*-------------------------------------------------------------------------
 | CSS
