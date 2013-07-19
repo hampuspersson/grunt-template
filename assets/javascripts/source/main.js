@@ -4,7 +4,10 @@
  * @hampusp
  */
 
-(function() {
-	$ = jQuery;
+(function( $ ) {
+	"use strict";
 
-}) (jQuery);
+	$(function() {
+		// Your code here
+	});
+}(jQuery));
