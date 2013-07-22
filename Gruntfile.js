@@ -58,7 +58,9 @@ module.exports = function(grunt) {
         uglify: {
             main: {
                 options: {
-                    sourceMap: '/wp-content/themes/malmoe/assets/javascripts/map/source-map-main.js',
+                    sourceMap: 'assets/javascripts/map/source-map-main.js',
+                    sourceMapRoot: 'assets/javascripts/soruce/',
+                    sourceMappingURL: 'map/source-map-main.js',
                     mangle: false
                 },
                 files: {
