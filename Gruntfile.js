@@ -112,13 +112,17 @@ module.exports = function(grunt) {
 
 
 		copy: {
-		  dist: {
-			files: [
-				{expand: true, src: [ '**/*', '!assets/**/*', '!node_modules', '!node_modules/**/*' ], dest: 'build/'}, // All files and dir except assets/**/* and node_modules/**/*
-				{expand: true, src: [ 'assets/fonts/*' ], dest: 'build/'},
-				{expand: true, src: [ 'assets/images/**/*' ], dest: 'build/'}
-			]
-		  }
+			dist: {
+				files: [
+					{expand: true, src: [
+								'**/*', // All files and folder
+								'!build', '!assets/**/*', '!node_modules', '!node_modules/**/*', //except these dirs
+								'!Gruntfile.js', '!package.json' ], // and these files
+								dest: 'build/'},
+					{expand: true, src: [ 'assets/fonts/*' ], dest: 'build/'},
+					{expand: true, src: [ 'assets/images/**/*' ], dest: 'build/'}
+				]
+			}
 		}
 
 	});
