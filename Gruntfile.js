@@ -116,7 +116,7 @@ module.exports = function(grunt) {
 				files: [
 					{expand: true, src: [
 								'**/*', // All files and folder
-								'!build', '!assets/**/*', '!node_modules', '!node_modules/**/*', //except these dirs
+								'!build', '!build/**/*', '!assets/**/*', '!node_modules', '!node_modules/**/*', //except these dirs
 								'!Gruntfile.js', '!package.json' ], // and these files
 								dest: 'build/'},
 					{expand: true, src: [ 'assets/fonts/*' ], dest: 'build/'},
